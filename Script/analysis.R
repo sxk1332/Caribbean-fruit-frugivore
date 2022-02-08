@@ -47,18 +47,14 @@ dat$pabiotic <- dat$abiotic_plant/dat$total.plant
 plot(dat$Area.km2, dat$total.plant)
 plot(dat$Area.km2, dat$pzoo)
 
-par(mfrow= c(2,1))
-par(mfrow=c(1,2))
-
-plot(dat$Area.km2, dat$total.plant, pch=16, las=1, xlab = "Area (10,000 km^2)", ylab = "# Plant species", xaxt = "n", yaxt = "n")
-axis(1, seq(0, 110000, by=10000), seq(0,11, by=1))
-axis(2, seq(0, 3000, by =500), seq(0, 3000, by =500), las=1)
 
 plot(dat$Area.km2, dat$pabiotic, pch=16, las=1, xlab = "Area (10,000 km^2)", ylab = "% zoochoric", xaxt = "n", yaxt = "n")
 axis(1, seq(0, 110000, by=10000), seq(0,11, by=1))
 axis(2, seq(0, 1, by =0.1), seq(0, 100, by =10), las=1)
 
-
+plot(dat$Area.km2, dat$total.plant, pch=16, las=1, xlab = "Area (10,000 km^2)", ylab = "# Plant species", xaxt = "n", yaxt = "n")
+axis(1, seq(0, 110000, by=10000), seq(0,11, by=1))
+axis(2, seq(0, 3000, by =500), seq(0, 3000, by =500), las=1)
 
 
 ################ ABIOTIC PLANTS #########################
